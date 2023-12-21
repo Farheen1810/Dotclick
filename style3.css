@@ -1,0 +1,99 @@
+body{
+    background-image: url('backgroundimage.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin-bottom: 50px;    
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-content: center;
+    color: white;
+}
+.items{
+    margin-right: 30px;
+}
+.lnk{
+    color: white;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 20px;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 80px;
+    margin-bottom: 180px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    position: relative;
+}
+.item1{
+    position: absolute;
+    text-align: left;
+    display: inline-block;
+   top:8px;
+    bottom: 8px;
+    left: 100px;
+    margin top:140px;
+    -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+    
+}
+.item2{
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+   top: 30px;
+   right: 70px;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+}
+
+@media screen and (max-width:600px)
+{
+    body{
+        margin-bottom: 0px;    
+    }
+    .lnk{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 40px;
+        margin-top: 140px;
+        margin-bottom: 180px;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .item1{
+        position: relative;
+        top: 5px; 
+        left: 120px;
+        -webkit-text-stroke-width: 0.6px;
+        -webkit-text-stroke-color: black;   
+        margin-bottom: 0px; 
+    }
+    .item2{
+        position: relative;
+       top: 60px;
+       left: 7px;
+       -webkit-text-stroke-width: 0.6px;
+       -webkit-text-stroke-color: black;
+    }
+
+}

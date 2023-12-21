@@ -1,0 +1,114 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-content: center;
+    color: white;
+}
+.items{
+    margin-right: 30px;
+}
+.lnk{
+    color: black;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    font-size: 20px;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.gallery-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+img{
+    display: inline-block;
+   height:300px;
+   width: 100%;
+}
+#fullimageview{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,.9);
+    text-align: center;
+}
+#fullimage{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 95%;
+    height: 95%;
+}
+#CloseButton{
+    position: absolute;
+    top:12px;
+    right:12px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.next, .prev{
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next{
+    right:10px;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left:10px;
+    border-radius: 3px 0 0 3px;
+}
+
+@media screen and (max-width:600px)
+{
+    .lnk{
+        font-size: 10px;
+    }
+    p{
+        font-size: 40px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+    .gallery-images{
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    img{
+        display: inline-block;
+       height:100%;
+       width: 100%;
+    }
+    #fullimage{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 170px;
+        padding-bottom: 40px;
+        width: 90%;
+        height: 50%;
+    }
+}
